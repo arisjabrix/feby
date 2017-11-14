@@ -9,28 +9,30 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token="EmErmzt2uqNZeWbRGux3.f852bSbAmEvC+mS1shZ78W.zgam557SUBA+ktxNtboBs/XULUzs9E/tNhboVPpBOHk=")
+cl.login(token="EmoltotCEGDI8RcJ8nG5.lOOarxPpAG43SXqgcCX6Lq.BMhTtDS9qkXh4Gc2icAZkHjYaTLXiF76OU94sTlORwo=")
 cl.loginResult()
 
-ki = LINETCR.LINE()
-ki.login(token="Em4xfv0usCIBrwk2vY34.Wz1fqvfgGwJe8NPVy//eTa.Bc21zm39ejAIUjGLsUQHZoOQ8CLOgp76Vmhmr9Y1/co=")
-ki.loginResult()
+#ki = LINETCR.LINE()
+#ki.login(token="Em4xfv0usCIBrwk2vY34.Wz1fqvfgGwJe8NPVy//eTa.Bc21zm39ejAIUjGLsUQHZoOQ8CLOgp76Vmhmr9Y1/co=")
+#ki.loginResult()
 
-kk = LINETCR.LINE()
-kk.login(token="EmFk7U4tCAdgmEDJbrB0.gHgDZ/sCHA+NwdWtcXb0Ka.Up8tWZS2lbJPMjeS/NsoUTYC+Fz64mvx0dwKPNiJjWM=")
-kk.loginResult()
+#kk = LINETCR.LINE()
+#kk.login(token="EmFk7U4tCAdgmEDJbrB0.gHgDZ/sCHA+NwdWtcXb0Ka.Up8tWZS2lbJPMjeS/NsoUTYC+Fz64mvx0dwKPNiJjWM=")
+#kk.loginResult()
 
-ks = LINETCR.LINE()
-ks.login(token="EmGeFr6xsKlqSrTRNaP0.f1iynSzMegrv8lZEhr/Y0a.QdaLgEE4nFSayBChPGw6yx3XEBJS4yYVKLIJ2kUWSrg=")
-ks.loginResult()
+#ks = LINETCR.LINE()
+#ks.login(token="EmGeFr6xsKlqSrTRNaP0.f1iynSzMegrv8lZEhr/Y0a.QdaLgEE4nFSayBChPGw6yx3XEBJS4yYVKLIJ2kUWSrg=")
+#ks.loginResult()
 
-kc = LINETCR.LINE()
-kc.login(token="EmRT1WEQfd5u26daIoY8.8mhEd2lsQtKaK+WF7d0GIa.WvbAcWkNgNGNfPmKAwZZgOtWdOdMTs0rcCBAvmsdIEY=")
-kc.loginResult()
+#kc = LINETCR.LINE()
+#kc.login(token="EmRT1WEQfd5u26daIoY8.8mhEd2lsQtKaK+WF7d0GIa.WvbAcWkNgNGNfPmKAwZZgOtWdOdMTs0rcCBAvmsdIEY=")
+#kc.loginResult()
 
-ka = LINETCR.LINE()
-ka.login(token="EmuSlFJTZDX9XhdmSz0f.iZablfn8gtUV4k4R4Vh9ZW.UdQfagCs1n576LWCUcxCnZ+hP9DPDwoEo++lgUwgee0=")
-ka.loginResult()
+#ka = LINETCR.LINE()
+#ka.login(token="EmuSlFJTZDX9XhdmSz0f.iZablfn8gtUV4k4R4Vh9ZW.UdQfagCs1n576LWCUcxCnZ+hP9DPDwoEo++lgUwgee0=")
+#ka.loginResult()
+
+cl = ki = kk =ks =kc = ka
 
 print "ĸeвoтan вro..!!!"
 reload(sys)
@@ -1714,7 +1716,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
                 ka.sendText(msg.to,"ᴄʜɪᴠᴀs 5..!!\nᴀʟʟ ʀᴇᴀᴅʏ...\n＼（〇_ｏ）／")
 #----------------------------------------------------------
             elif msg.text == "#cek":
-              if msg.from_ in admin:
+              #if msg.from_ in admin:
                     cl.sendText(msg.to, "Set point.")
                     try:
                         del wait2['readPoint'][msg.to]
@@ -1728,7 +1730,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
                     wait2['ROM'][msg.to] = {}
                     print wait2
             elif msg.text == "#cctv":
-              if msg.from_ in admin:
+              #if msg.from_ in admin:
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                             chiya = ""
@@ -1851,7 +1853,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
                 ks.sendText(msg.to,"ok")
 #-----------------------------------------------
             elif "#speed" in msg.text:
-              if msg.from_ in admin:
+              #if msg.from_ in admin:
                 start = time.time()
                 cl.sendText(msg.to, "ᴠᴘs ɢʀᴀᴛɪsᴀɴ...")
                 elapsed_time = time.time() - start
