@@ -1715,7 +1715,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
                 kc.sendText(msg.to,"ᴄʜɪᴠᴀs 4")
                 ka.sendText(msg.to,"ᴄʜɪᴠᴀs 5..!!\nᴀʟʟ ʀᴇᴀᴅʏ...\n＼（〇_ｏ）／")
 #----------------------------------------------------------
-            elif msg.text == "#cek":
+            elif msg.text == "/cek":
               #if msg.from_ in admin:
                     cl.sendText(msg.to, "Set point.")
                     try:
@@ -1729,7 +1729,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
                     wait2['setTime'][msg.to] = datetime.now().strftime('%Y-%m-%d %H:%M')
                     wait2['ROM'][msg.to] = {}
                     print wait2
-            elif msg.text == "#cctv":
+            elif msg.text == "/cctv":
               #if msg.from_ in admin:
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
